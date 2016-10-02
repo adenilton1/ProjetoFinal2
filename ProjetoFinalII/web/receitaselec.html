@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Cesar Szpak - Celke">
+
+        <link rel="icon" href="imagens/favicon.ico">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/shop-homepage.css" rel="stylesheet">
+
+        <title>Bonanza</title>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <style>
+            .estrelas input[type=radio] {
+                display: none;
+                padding-right:10px;
+                padding-left:10px;
+
+            }
+            .estrelas label i.fa:before {
+                content:'\f005';
+                color: #FC0;
+            }
+            .estrelas input[type=radio]:checked ~ label i.fa:before {
+                color: #CCC;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navebar-collapse-1" >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">Bonanza</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Receitas</a></li>
+                        <li><a href="#contact">Ingredientes</a></li>
+                        <li><a href="#chef">Chef's</a></li>
+                        <li><a href="#pagamento">Pagamento</a></li>
+                        <li><a href="#carrinho">Meu carrinho</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configurações <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Perfil</a></li>
+                                <li><a href="#">Pedidos </a></li>                             
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header"></li>
+                                <li><a href="#">Ajuda</a></li>
+                                <li><a href="#">Fazer Logout</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+
+        </nav>
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+
+
+                <div class="col-md-3">
+
+                    <p class="lead">Opções De Preços</p>
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Preço Elevado</a>
+                        <a href="#" class="list-group-item">Preço Mediano</a>
+                        <a href="#" class="list-group-item">Preço Baixo</a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-9">
+
+                    <div class="thumbnail">
+
+                        <img class="img-responsive" src="imagensr/caipirinhamolecular.jpg" alt="">
+
+                        <div class="caption-full">
+
+                            <h4 class="pull-right">R$24.99</h4>
+
+                            <h4><a href="#">Caipirinha Molecular</a>
+
+                            </h4>
+
+                            <p><a target="_blank" href="http://bootsnipp.com"></a></p>
+
+                            <p>
+
+                                <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/"></a>
+
+                                </strong></p>
+                            <h4>
+                                Ingreditens:
+                            </h4>
+
+                            <p>Cachaça Esferificada no nitrogenio liquido.</p>
+                            <p>Pó de limão.</p>
+                            <p>Açucar verde.</p>
+
+                        </div>
+
+                        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                        <div class="estrelas">
+                            <p>
+                                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                <label for="cm_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                <label for="cm_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                <label for="cm_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                <label for="cm_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                <label for="cm_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="well">
+                        <textarea name="comentário" rows="10" cols="127">Escreva seu comentário....</textarea>
+                        <p></p>
+                        <div class="text-right">
+
+                            <input type="button" name="enviar" value="Enviar">
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="estrelas">
+                                <p>
+                                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                    <label for="cm_star-1"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                    <label for="cm_star-2"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                    <label for="cm_star-3"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                    <label for="cm_star-4"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                    <label for="cm_star-5"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                    Evaristo
+                                </p>
+                                <p>Eu gostei mais fiquei meio bebado rapido de mais! :)</p>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="estrelas">
+                                <p>
+                                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                    <label for="cm_star-1"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                    <label for="cm_star-2"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                    <label for="cm_star-3"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                    <label for="cm_star-4"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                    <label for="cm_star-5"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                    Mariana
+                                </p>
+                                <p>Eu gostei mas prefiro Pitu!</p>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="estrelas">
+                                <p>
+                                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                    <label for="cm_star-1"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                    <label for="cm_star-2"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                    <label for="cm_star-3"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                    <label for="cm_star-4"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                    <label for="cm_star-5"><i class="fa"></i></label>
+                                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                    Ewaldo
+                                </p>
+                                <p>Gostei de beber essa caipirinha, não vou tomar outra ! Vou não posso não minha Sintia decha não!</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <div class="container">
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Adenilton Corporation 2016</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="js/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+

@@ -1,388 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="Cesar Szpak - Celke">
-
-        <link rel="icon" href="imagens/favicon.ico">
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link href="css/shop-homepage.css" rel="stylesheet">
-
-        <title>Bonanza</title>
-
-        <link href="css/bootstrap.css" rel="stylesheet">
-
-        <style>
-            .estrelas input[type=radio] {
-                display: none;
-                padding-right:10px;
-                padding-left:10px;
-
-            }
-            .estrelas label i.fa:before {
-                content:'\f005';
-                color: #FC0;
-            }
-            .estrelas input[type=radio]:checked ~ label i.fa:before {
-                color: #CCC;
-            }
-        </style>
-
-    </head>
-
-    <body>
-
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navebar-collapse-1" >
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="#">Bonanza</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">Receitas</a></li>
-                        <li><a href="#contact">Ingredientes</a></li>
-                        <li><a href="#chef">Chef's</a></li>
-                        <li><a href="#pagamento">Pagamento</a></li>
-                        <li><a href="#carrinho">Meu carrinho</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configurações <span class="caret"></span></a>
-
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Perfil</a></li>
-                                <li><a href="#">Pedidos </a></li>                             
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header"></li>
-                                <li><a href="#">Ajuda</a></li>
-                                <li><a href="#">Fazer Logout</a></li>
-
-                            </ul>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-
-        </nav>
-
-        <div class="container" >
-
-            <div class="row">
-
-                <div class="col-md-3">
-
-                    <p class="lead">Opções De Preços</p>
-
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">Preço Elevado</a>
-                        <a href="#" class="list-group-item">Preço Mediano</a>
-                        <a href="#" class="list-group-item">Preço Baixo</a>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-9">
-
-                    <div class="row carousel-holder">
-
-                        <div class="col-md-12">
-
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner">
-
-                                    <div class="item active">
-                                        <img class="slide-image" src="imagens/tempero.jpg" alt="">
-                                    </div>
-
-                                    <div class="item">
-                                        <img class="slide-image" src="imagens/muqueca.jpg" alt="">
-                                    </div>
-
-                                    <div class="item">
-                                        <img class="slide-image" src="imagens/massa.jpg" alt="">
-                                    </div>
-
-                                </div>
-
-                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-
-                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/caipirinhamolecular.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right"> R$12,50</h4>
-                                    <h4><a href="#">Caipirinha Molecular</a>
-                                    </h4>
-                                    <p>Raspas de limão cristalizado, uma bolha de vodka, açucar refinado. <a target="_blank" href="http://www.bootsnipp.com"></a>.</p>
-                                </div>
-
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/calamarioriental.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right">R$64,99</h4>
-                                    <h4><a href="#">Calamari Orieltas</a>
-                                    </h4>
-                                    <p>Aneis de lula servido com molho trtaro e temperados com suco de limão e alho.</p>
-                                </div>
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/carrédecordeiro.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right">R$74.99</h4>
-                                    <h4><a href="#">Carré de cordeiro</a>
-                                    </h4>
-                                    <p>Carne de cordeiro cozida com legumes, molho de vinho tindo e ervas.</p>
-                                </div>
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/chimichanga.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right">R$10.99</h4>
-                                    <h4><a href="#">Chimichanga</a>
-                                    </h4>
-                                    <p>Tortilha enrolada com cheios de carne, temperda com alho, ervas e vinho tinto.</p>
-                                </div>
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/menu_du_jour_ceviche_de_linguado_ao_leite_de_coco_com_caviar_de_shoyo.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right">$94.99</h4>
-                                    <h4><a href="#">Ceviche de linguado</a>
-                                    </h4>
-                                    <p>Linguado temperado com limão, baunilha, azeite, servido com caiar de shoyo.</p>
-                                </div>
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-
-                            <div class="thumbnail">
-
-                                <img src="imagensr/moquecamolecular.jpg" alt="">
-
-                                <div class="caption">
-                                    <h4 class="pull-right">R$34.99</h4>
-                                    <h4><a href="#">Moqueca Molecular</a>
-                                    </h4>
-                                    <p>Moqueca molecular caldeirada de peixe com legumes e molho choyo caramelizado e</p>
-                                </div>
-
-                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                                <div class="estrelas">
-                                    <p>
-                                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                                        <label for="cm_star-1"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                                        <label for="cm_star-2"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                                        <label for="cm_star-3"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                                        <label for="cm_star-4"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                                        <label for="cm_star-5"><i class="fa"></i></label>
-                                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-        <div class="container">
-
-            <hr>
-
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; Adenilton Corporation 2016</p>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
-
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <script src="js/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+  
+<title>panificadora bonanza</title>
+<style>
+    body{
+      background-color:#FF0000;
+    }
+    #login-box{
+      background-color:#CD0000;
+      width:380px;
+      height:260px;
+      margin:140px auto 0px;
+      border-radius:5px;
+      
+    }
+    #login-box-interno{
+      width:360px;
+      height:240px;
+      background-color:#fdfdfd;
+      position:absolute;
+      margin:10px;
+      border-radius:5px;
+      box-shadow:0px 0px 5px black;
+      overflow:hidden;
+    }
+  #login-box-label{
+    
+    height:45px;
+    text-align:center;
+    
+    font:bold 14px/45px sans-serif;
+    
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f4f4+0,f4f4f4+100 */
+background: #f4f4f4; /* Old browsers */
+background: -moz-linear-gradient(top, #f4f4f4 0%, #f4f4f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f4f4f4 0%,#f4f4f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f4f4f4 0%,#f4f4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+    border-bottom:1px solid #FFFFFF;
+    box-shadow:1px 0px 3px #000000;
+    color:#555555;
+    text-shadow:1px 0px 1px #FFFFFF;
+  }
+  .input-div{
+    margin:20px;
+    padding:5px;
+    background-color:#f2f5f7;
+    border-radius:3px;
+  }
+  .input-div input{
+    width:301px;
+    height:25px;
+    padding-left:5px;
+    font: normal 13px sans-serif; 
+    color:#aeaeae;
+    border-radius:3px;
+    border:1px solid #bfc4c6;
+    outline:none;
+  }
+  .input-div:hover{
+    background-color:#e0f1fc;
+  }
+  .input-div:over input{
+    border-color:#7d6cbd;
+  }
+  #input-senha{
+    margin-top:-10px;
+  }
+  #botoes{
+    width:301px;
+    margin-left:25px;
+  }
+  #botao{
+    float:right;
+    background-color:red;
+    padding:5px 15px;
+    font:bold 12px sans-serif;
+    border-radius:0px;
+    text-shadow:0px 1px 0px; #FFFFFF;
+    border:1px solild #FF4040;
+    background: #FF4040;
+    background: -moz-linear-gradient(top, #FF4040 0%, #ffa399 100%);
+    background: -webkit-gradiente(linear, left top, leftbottom, color-stop(0%,#FF4040), color-stop(100%,#ffa399));
+    background: -webkit-linear-gradient(top, #FF4040 0%,#ffa399 100%);
+    background: -o-linear-gradient(top, #FF4040 0%,#ffa399 100%);
+    background: -ms-linear-gradient(top, #FF4040 0%,#ffa399 100%);
+    background: linear-gradient(top, #FF4040 0%,#ffa399 100%);
+    filter:prodig:DXImageTransform.Microsoft.gradient(startColorstr='#FF4040',endColors'#ffa399',GradientType=0);
+     
+    color:#8B0000;
+    
+    box-shadow:0px 0px 10px #c9c9c9;
+    
+  }#botao:hover{
+    
+    background: #ffa399;
+    background: -moz-linear-gradient(top, #ffa399 0%, #FF4040 100%);
+    background: -webkit-gradiente(linear, left top, leftbottom, color-stop(0%,#ffa399), color-stop(100%,#FF4040));
+    background: -webkit-linear-gradient(top, #ffa399 0%,#FF4040 100%);
+    background: -o-linear-gradient(top, #ffa399 0%,#FF4040 100%);
+    background: -ms-linear-gradient(top, #ffa399 0%,#FF4040 100%);
+    background: linear-gradient(top, #ffa399 0%,#FF4040 100%);
+    filter:prodig:DXImageTransform.Microsoft.gradient(startColorstr='#ffa399',endColors'#FF4040',GradientType=0);
+     
+    curso:pointer;
+  }
+  #lembrar-senha{
+    font:normal 12px sans-serif;
+    
+  }
+    #face{
+    width:301px;
+    height:30px;
+    padding-left:27px ;
+    border-radius:20px 20px;
+    font: normal 13px sans-serif;
+        
+    }
+ </style>
+</head>
+<body>
+  <div id="login-box">
+    <div id="login-box-interno">
+      <div id="login-box-label">Login</div>
+      <div class="input-div" id="input-usuario">
+        <input type="text" value="Usuario ou Email"/>
+      </div>
+      <div class="input-div" id="input-senha">
+        <input type="text" value="Senha"/>
+      </div>
+      <div id="botoes">
+        <div id="botao">Login</div>
+        <div id="lembrar-senha"><input type="checkbox"/> Lembrar minha senha</div>
+          
+      </div>
+        
+      <div id="face" align="left"><img src="imagens/2.png" width="30" height="30" /></div>
+    </div>
+     
+  </div>
+    
+</body>
 </html>
